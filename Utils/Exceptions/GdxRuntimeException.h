@@ -1,0 +1,8 @@
+#ifndef GDXRUNTIMEEXCEPTION_H
+#define GDXRUNTIMEEXCEPTION_H
+
+class GdxRuntimeException
+{
+};
+
+#endif //GDXRUNTIMEEXCEPTION_H

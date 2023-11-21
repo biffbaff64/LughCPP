@@ -1,0 +1,8 @@
+#ifndef ILLEGALSTATEEXCEPTION_H
+#define ILLEGALSTATEEXCEPTION_H
+
+class IllegalStateException
+{
+};
+
+#endif //ILLEGALSTATEEXCEPTION_H

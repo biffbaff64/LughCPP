@@ -1,0 +1,76 @@
+cmake_minimum_required(VERSION 3.27)
+
+project(LughCPP)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_library(LughCPP STATIC library.cpp
+            Assets/AssetDescriptor.cpp
+            Assets/AssetDescriptor.h
+            Assets/AssetLoaderParameters.h
+            Assets/AssetLoadingTask.cpp
+            Assets/AssetLoadingTask.h
+            Assets/AssetManager.cpp
+            Assets/AssetManager.h
+            Assets/IAssetErrorListener.h
+            Assets/RefCountedContainer.cpp
+            Assets/RefCountedContainer.h
+            Assets/Loaders/AssetLoader.cpp
+            Assets/Loaders/AssetLoader.h
+            Assets/Loaders/Resolvers/IFileHandleResolver.h
+            Audio/IAudioDevice.h
+            Audio/IAudioRecorder.h
+            Core/IApplication.h
+            Core/IAudio.h
+            Core/IFile.h
+            Core/BaseGraphics.h
+            Core/IInput.h
+            Core/ILifeCycleListener.h
+            Core/INet.h
+            Core/IPreferences.h
+            Graphics/ICursor.h
+            Graphics/Igl20.h
+            Graphics/Igl30.h
+            Maths/Affine2.cpp
+            Maths/Affine2.h
+            Maths/Matrix3.cpp
+            Maths/Matrix3.h
+            Maths/Matrix4.cpp
+            Maths/Matrix4.h
+            Maths/Vector2.cpp
+            Maths/Vector2.h
+            Maths/Vector3.cpp
+            Maths/Vector3.h
+            Utils/Async/AsyncExecutor.cpp
+            Utils/Async/AsyncExecutor.h
+            Utils/Collections/Array.cpp
+            Utils/Collections/Array.h
+            Utils/Collections/Collections.h
+            Utils/Collections/KeyValuePair.h
+            Utils/Collections/ObjectMap.cpp
+            Utils/Collections/ObjectMap.h
+            Utils/Exceptions/GdxRuntimeException.cpp
+            Utils/Exceptions/GdxRuntimeException.h
+            Utils/Exceptions/IllegalStateException.cpp
+            Utils/Exceptions/IllegalStateException.h
+            Utils/Align.cpp
+            Utils/Align.h
+            Utils/Trace.cpp
+            Utils/Trace.h
+            Utils/IClipboard.h
+            Utils/IRunnable.h
+            Core/Gdx.cpp
+            Core/Gdx.h
+            Audio/ISound.h
+            Audio/IMusic.h
+            Graphics/GLUtils/GlVersion.cpp
+            Graphics/GLUtils/GlVersion.h
+            Core/GdxVersion.cpp
+            Core/GdxVersion.h
+            Utils/StringUtils.cpp
+            Utils/StringUtils.h
+            Core/BaseGraphics.cpp
+            Core/Game.cpp
+            Core/Game.h
+            Core/IScreen.h
+)

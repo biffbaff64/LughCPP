@@ -1,0 +1,8 @@
+#ifndef IASSETERRORLISTENER_H
+#define IASSETERRORLISTENER_H
+
+class IAssetErrorListener
+{
+};
+
+#endif //IASSETERRORLISTENER_H
