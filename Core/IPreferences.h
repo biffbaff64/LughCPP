@@ -3,6 +3,9 @@
 
 class IPreferences
 {
+private:
+    IPreferences() = default;
+    virtual ~IPreferences() = default;
 };
 
 #endif //IPREFERENCES_H

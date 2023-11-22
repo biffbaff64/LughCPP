@@ -8,8 +8,20 @@ BaseGraphics::BaseGraphics()
       m_width(0),
       m_height(0),
       m_back_buffer_width(0),
-      m_back_buffer_height(0)
+      m_back_buffer_height(0),
+      m_logical_width(0),
+      m_logical_height(0)
 {
+}
+
+int BaseGraphics::GetWidth()
+{
+    return this->m_width;
+}
+
+int BaseGraphics::GetHeight()
+{
+    return this->m_height;
 }
 
 float BaseGraphics::GetRawDeltaTime()
@@ -26,4 +38,3 @@ float BaseGraphics::GetBackBufferScale()
 {
     return this->m_back_buffer_width / this->m_width;
 }
-

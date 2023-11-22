@@ -3,6 +3,9 @@
 
 class IClipboard
 {
+private:
+    IClipboard() = default;
+    virtual ~IClipboard() = default;
 };
 
 #endif //ICLIPBOARD_H

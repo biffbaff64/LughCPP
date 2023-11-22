@@ -38,10 +38,10 @@ ASSETS
 
     - DONE - AssetDescriptor                
     - DONE - AssetLoaderParameters          
-    -      - AssetLoadingTask               
-    -      - AssetManager                   
-    -      - IAssetErrorListener            
-    -      - RefCountedContainer            
+    - IP   - AssetLoadingTask               
+    - IP   - AssetManager                   
+    - DONE - IAssetErrorListener            
+    - DONE - RefCountedContainer            
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -49,7 +49,7 @@ ASSETS
 ASSETS/LOADERS
 --------------
 
-    -      - AssetLoader                    
+    - IP   - AssetLoader                    
     -      - AsynchronousAssetLoader        
     -      - BitmapFontLoader               
     -      - CubemapLoader                  
@@ -72,7 +72,7 @@ ASSETS/LOADERS/RESOLVERS
 ------------------------
 
     -      - AbsoluteFileHandleResolver
-    -      - IFileHandleResolver
+    - IP   - IFileHandleResolver
     -      - InternalFileHandleResolver
     -------------------------------------
     -      - ClasspathFileHandleResolver   
@@ -88,10 +88,10 @@ ASSETS/LOADERS/RESOLVERS
 AUDIO
 -----
 
-    - IP   - IAudioDevice                   
-    - IP   - IAudioRecorder                 
-    - IP   - IMusic                         
-    - IP   - ISound                         
+    - DONE - IAudioDevice                   
+    - DONE - IAudioRecorder                 
+    - DONE - IMusic                         
+    - DONE - ISound                         
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -99,18 +99,18 @@ AUDIO
 CORE
 ----
 
-    -      - AbstractGraphics               
     -      - AbstractInput                  
     -      - ApplicationAdapter             
-    -      - Game                           
+    - DONE - BaseGraphics
+    - DONE - Game                           
     - DONE - Gdx                            
     - DONE - GDXVersion                     
     - DONE - IApplication                   
-    -      - IApplicationListener           
+    - DONE - IApplicationListener           
     -      - IApplicationLogger             
     -      - IAudio                         
+    - DONE - IDisposable                         
     - DONE - IFile                          
-    - IP   - IGraphics                      
     - IP   - IInput                         
     -      - IInputProcessor                
     - IP   - ILifecycleListener             
@@ -118,7 +118,7 @@ CORE
     -      - InputAdapter                   
     -      - InputEventQueue                
     - IP   - IPreferences                   
-    -      - IScreen                        
+    - DONE - IScreen                        
     -      - ScreenAdapter                  
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -178,9 +178,10 @@ GRAPHICS
     -      - Cubemap                            
     -      - FPSLogger                          
     -      - GLTexture                          
+    -      - GraphicsStructs                       
     -      - GraphicsType                       
     -      - ICubemapData                       
-    -      - ICursor                            
+    - DONE - ICursor                            
     -      - IDownloadPixmapResponseListener    
     -      - IGL20                              
     -      - IGL30                              

@@ -5,6 +5,8 @@
 #include "../Graphics/IGL20.h"
 #include "../Graphics/IGL30.h"
 #include "../Graphics/GLUtils/GlVersion.h"
+#include "../Graphics/GraphicsStructs.h"
+#include "../Graphics/Pixmap.h"
 
 class BaseGraphics
 {
@@ -18,20 +20,27 @@ public:
     // the Application instance to use OpenGL ES 3.0!
     virtual bool IsGL30Available() = 0;
 
-    virtual float        GetBackBufferScale() = 0;
-    virtual int          GetSafeInsetLeft() = 0;
-    virtual int          GetSafeInsetTop() = 0;
-    virtual int          GetSafeInsetBottom() = 0;
-    virtual int          GetSafeInsetRight() = 0;
-    virtual long         GetFrameId() = 0;
-    virtual int          GetFramesPerSecond() = 0;
-    virtual GraphicsType GetGraphicsType() = 0;
-    virtual float        GetPpiX() = 0;
-    virtual float        GetPpiY() = 0;
-    virtual float        GetPpcX() = 0;
-    virtual float        GetPpcY() = 0;
-    virtual float        GetDeltaTime() = 0;
-    virtual float        GetRawDeltaTime() = 0;
+    virtual int GetWidth() = 0;
+    virtual int GetHeight() = 0;
+    virtual int GetLogicalWidth() = 0;
+    virtual int GetLogicalHeight() = 0;
+    virtual int GetBackBufferWidth() = 0;
+    virtual int GetBackBufferHeight() = 0;
+
+    virtual float  GetBackBufferScale() = 0;
+    virtual int    GetSafeInsetLeft() = 0;
+    virtual int    GetSafeInsetTop() = 0;
+    virtual int    GetSafeInsetBottom() = 0;
+    virtual int    GetSafeInsetRight() = 0;
+    virtual long   GetFrameId() = 0;
+    virtual int    GetFramesPerSecond() = 0;
+    virtual GLType GetGraphicsType() = 0;
+    virtual float  GetPpiX() = 0;
+    virtual float  GetPpiY() = 0;
+    virtual float  GetPpcX() = 0;
+    virtual float  GetPpcY() = 0;
+    virtual float  GetDeltaTime() = 0;
+    virtual float  GetRawDeltaTime() = 0;
 
     // This is a scaling factor for the Density Independent Pixel unit,
     // following the convention where one DIP is one pixel on an approximately
@@ -74,7 +83,7 @@ protected:
     IGL30*     m_gl30;
     GLVersion* m_gl_version;
 
-    BufferFormatDescriptor m_buffer_format;
+    BufferFormat m_buffer_format;
 
     float m_deltatime;
 

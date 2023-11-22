@@ -3,6 +3,9 @@
 
 class IRunnable
 {
+private:
+    IRunnable() = default;
+    virtual ~IRunnable() = default;
 };
 
 #endif //IRUNNABLE_H

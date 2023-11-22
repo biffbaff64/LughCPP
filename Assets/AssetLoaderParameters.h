@@ -8,7 +8,7 @@ class AssetLoaderParameters
 {
 public:
     AssetLoaderParameters() = default;
-    ~AssetLoaderParameters() = default;
+    virtual ~AssetLoaderParameters() = default;
 
     void ( *loadedCallBack )( AssetManager<T> manager, char* file_name, void* type );
 };

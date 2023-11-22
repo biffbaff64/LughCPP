@@ -41,8 +41,8 @@ public:
     virtual void PostRunnable( IRunnable runnable ) = 0;
 
 private:
-    IApplication()          = default;
-    virtual ~IApplication() = default;
+    IApplication();
+    virtual ~IApplication();
 
     int             log_level = LOG_NONE;
     ApplicationType app_type  = ApplicationType::Desktop;

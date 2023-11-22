@@ -44,6 +44,10 @@ public:
      * \brief Called when this screen should release all resources.
      */
     void Dispose();
+
+private:
+    IScreen()          = default;
+    virtual ~IScreen() = default;
 };
 
 #endif //ISCREEN_H

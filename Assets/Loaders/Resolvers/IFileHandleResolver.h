@@ -4,6 +4,10 @@
 class IFileHandleResolver
 {
 public:
+
+private:
+    IFileHandleResolver() = default;
+    virtual ~IFileHandleResolver() = default;
 };
 
 #endif //IFILEHANDLERESOLVER_H

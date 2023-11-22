@@ -73,4 +73,13 @@ add_library(LughCPP STATIC library.cpp
             Core/Game.cpp
             Core/Game.h
             Core/IScreen.h
+            Core/IApplicationListener.h
+            Core/IDisposable.h
+            Graphics/Pixmap.cpp
+            Graphics/Pixmap.h
+            Graphics/GraphicsStructs.h
+            Utils/Async/AsyncResult.cpp
+            Utils/Async/AsyncResult.h
+            Assets/Loaders/Resolvers/AbsoluteFileHandleResolver.cpp
+            Assets/Loaders/Resolvers/AbsoluteFileHandleResolver.h
 )

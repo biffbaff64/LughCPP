@@ -3,6 +3,9 @@
 
 class IInput
 {
+private:
+    IInput() = default;
+    virtual ~IInput() = default;
 };
 
 #endif //IINPUT_H
