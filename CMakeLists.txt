@@ -82,4 +82,16 @@ add_library(LughCPP STATIC library.cpp
             Utils/Async/AsyncResult.h
             Assets/Loaders/Resolvers/AbsoluteFileHandleResolver.cpp
             Assets/Loaders/Resolvers/AbsoluteFileHandleResolver.h
+            Graphics/ICubemapData.h
+            Graphics/IDownloadPixmapResponseListener.h
+            Graphics/ITextureArrayData.h
+            Graphics/ITextureData.h
+            Graphics/G2D/Gdx2DPixmap.cpp
+            Graphics/G2D/Gdx2DPixmap.h
+            Graphics/Color.cpp
+            Graphics/Color.h
+            Files/Buffers/ByteBuffer.cpp
+            Files/Buffers/ByteBuffer.h
+            Graphics/PixmapFormat.cpp
+            Graphics/PixmapFormat.h
 )

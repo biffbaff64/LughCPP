@@ -142,9 +142,6 @@ FILES
     - java.io.IOException                   -> 
     - java.io.OutputStream                  -> 
     - java.io.Reader                        -> 
-
-    - Would MemoryStream cover all these?
-
     - java.nio.Buffer                       ->  
     - java.nio.BufferUtils                  ->  
     - java.nio.ByteBuffer                   ->  
@@ -173,25 +170,25 @@ GRAPHICS
 --------
 
     -      - Camera                             
-    -      - Color                              
+    - IP   - Color                              
     -      - Colors                             
     -      - Cubemap                            
     -      - FPSLogger                          
     -      - GLTexture                          
-    -      - GraphicsStructs                       
+    - DONE - GraphicsStructs                       
     -      - GraphicsType                       
-    -      - ICubemapData                       
+    - DONE - ICubemapData                       
     - DONE - ICursor                            
-    -      - IDownloadPixmapResponseListener    
-    -      - IGL20                              
-    -      - IGL30                              
-    -      - ITextureArrayData                  
-    -      - ITextureData                       
+    - DONE - IDownloadPixmapResponseListener    
+    - IP   - IGL20                              
+    - IP   - IGL30                              
+    - DONE - ITextureArrayData                  
+    - DONE - ITextureData                       
     -      - Mesh                               
     -      - OrthographicCamera                 
     -      - PerspectiveCamera                  
-    -      - Pixmap                             
-    -      - PixmapFormat                             
+    - IP   - Pixmap                             
+    - IP   - PixmapFormat                             
     -      - PixmapIO                           
     -      - Texture                            
     -      - TextureArray                       
@@ -232,7 +229,7 @@ GRAPHICS/G2D
     -      - BitmapFontCache                
     -      - CpuSpriteBatch                 
     -      - DistanceFieldFont              
-    -      - Gdx2DPixmap                    
+    - IP   - Gdx2DPixmap                    
     -      - GlyphLayout                    
     -      - IBatch                         
     -      - IPolygonBatch                  
@@ -616,7 +613,7 @@ SCENES.SCENE2D/UTILS
 UTILS
 -----
 
-    -      - Align                          
+    - IP   - Align                          
     -      - BinaryHeap
     -      - Bits                           
     -      - Character
@@ -626,8 +623,8 @@ UTILS
     -      - DataUtils                      
     -      - FloatConsts                    
     -      - ICloseable                     
-    -      - IClipboard                                     
-    -      - IRunnable                      
+    - IP   - IClipboard                                     
+    - IP   - IRunnable                      
     -      - Logger                         
     -      - PerformanceCounter             
     -      - PerformanceCounters            
@@ -643,7 +640,7 @@ UTILS
     -      - Timer                          
     -      - TimeUtils
     -      - TimSort
-    -      - Trace                          
+    - IP   - Trace                          
 
     -      - GdxNativesLoader               
     -      - LittleEndianInputStream        

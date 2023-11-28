@@ -15,7 +15,7 @@ public:
     };
 
 private:
-    ICursor() = default;
+    ICursor()          = default;
     virtual ~ICursor() = default;
 };
 
