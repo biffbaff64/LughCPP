@@ -24,15 +24,15 @@ public:
     void SetDevMode( bool dev_mode_state );
     void SetGodMode( bool god_mode_state );
 
-    IApplication* pApp;
-    BaseGraphics* pGraphics;
-    IAudio*       pAudio;
-    IFile*        pFiles;
-    IInput*       pInput;
-    INet*         pNet;
-    IGL20*        pGL;
-    IGL20*        pGL20;
-    IGL30*        pGL30;
+    static IApplication* pApp;
+    static BaseGraphics* pGraphics;
+    static IAudio*       pAudio;
+    static IFile*        pFiles;
+    static IInput*       pInput;
+    static INet*         pNet;
+    static IGL20*        pGL;
+    static IGL20*        pGL20;
+    static IGL30*        pGL30;
 
 private:
     bool is_dev_mode = false;

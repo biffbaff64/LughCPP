@@ -94,4 +94,10 @@ add_library(LughCPP STATIC library.cpp
             Files/Buffers/ByteBuffer.h
             Graphics/PixmapFormat.cpp
             Graphics/PixmapFormat.h
+            Files/Buffers/Buffer.cpp
+            Files/Buffers/Buffer.h
+            Files/Buffers/IntBuffer.cpp
+            Files/Buffers/IntBuffer.h
+            Files/Buffers/FloatBuffer.cpp
+            Files/Buffers/FloatBuffer.h
 )

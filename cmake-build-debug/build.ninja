@@ -266,6 +266,27 @@ build CMakeFiles\LughCPP.dir\Graphics\PixmapFormat.cpp.obj: CXX_COMPILER__LughCP
   TARGET_COMPILE_PDB = CMakeFiles\LughCPP.dir\LughCPP.pdb
   TARGET_PDB = LughCPP.pdb
 
+build CMakeFiles\LughCPP.dir\Files\Buffers\Buffer.cpp.obj: CXX_COMPILER__LughCPP_unscanned_Debug C$:\Development\Projects\CPP\LughCPP\Files\Buffers\Buffer.cpp || cmake_object_order_depends_target_LughCPP
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\LughCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\LughCPP.dir\Files\Buffers
+  TARGET_COMPILE_PDB = CMakeFiles\LughCPP.dir\LughCPP.pdb
+  TARGET_PDB = LughCPP.pdb
+
+build CMakeFiles\LughCPP.dir\Files\Buffers\IntBuffer.cpp.obj: CXX_COMPILER__LughCPP_unscanned_Debug C$:\Development\Projects\CPP\LughCPP\Files\Buffers\IntBuffer.cpp || cmake_object_order_depends_target_LughCPP
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\LughCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\LughCPP.dir\Files\Buffers
+  TARGET_COMPILE_PDB = CMakeFiles\LughCPP.dir\LughCPP.pdb
+  TARGET_PDB = LughCPP.pdb
+
+build CMakeFiles\LughCPP.dir\Files\Buffers\FloatBuffer.cpp.obj: CXX_COMPILER__LughCPP_unscanned_Debug C$:\Development\Projects\CPP\LughCPP\Files\Buffers\FloatBuffer.cpp || cmake_object_order_depends_target_LughCPP
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  OBJECT_DIR = CMakeFiles\LughCPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\LughCPP.dir\Files\Buffers
+  TARGET_COMPILE_PDB = CMakeFiles\LughCPP.dir\LughCPP.pdb
+  TARGET_PDB = LughCPP.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target LughCPP
@@ -274,7 +295,7 @@ build CMakeFiles\LughCPP.dir\Graphics\PixmapFormat.cpp.obj: CXX_COMPILER__LughCP
 #############################################
 # Link the static library LughCPP.lib
 
-build LughCPP.lib: CXX_STATIC_LIBRARY_LINKER__LughCPP_Debug CMakeFiles\LughCPP.dir\library.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetDescriptor.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetLoadingTask.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetManager.cpp.obj CMakeFiles\LughCPP.dir\Assets\RefCountedContainer.cpp.obj CMakeFiles\LughCPP.dir\Assets\Loaders\AssetLoader.cpp.obj CMakeFiles\LughCPP.dir\Maths\Affine2.cpp.obj CMakeFiles\LughCPP.dir\Maths\Matrix3.cpp.obj CMakeFiles\LughCPP.dir\Maths\Matrix4.cpp.obj CMakeFiles\LughCPP.dir\Maths\Vector2.cpp.obj CMakeFiles\LughCPP.dir\Maths\Vector3.cpp.obj CMakeFiles\LughCPP.dir\Utils\Async\AsyncExecutor.cpp.obj CMakeFiles\LughCPP.dir\Utils\Collections\Array.cpp.obj CMakeFiles\LughCPP.dir\Utils\Collections\ObjectMap.cpp.obj CMakeFiles\LughCPP.dir\Utils\Exceptions\GdxRuntimeException.cpp.obj CMakeFiles\LughCPP.dir\Utils\Exceptions\IllegalStateException.cpp.obj CMakeFiles\LughCPP.dir\Utils\Align.cpp.obj CMakeFiles\LughCPP.dir\Utils\Trace.cpp.obj CMakeFiles\LughCPP.dir\Core\Gdx.cpp.obj CMakeFiles\LughCPP.dir\Graphics\GLUtils\GlVersion.cpp.obj CMakeFiles\LughCPP.dir\Core\GdxVersion.cpp.obj CMakeFiles\LughCPP.dir\Utils\StringUtils.cpp.obj CMakeFiles\LughCPP.dir\Core\BaseGraphics.cpp.obj CMakeFiles\LughCPP.dir\Core\Game.cpp.obj CMakeFiles\LughCPP.dir\Graphics\Pixmap.cpp.obj CMakeFiles\LughCPP.dir\Utils\Async\AsyncResult.cpp.obj CMakeFiles\LughCPP.dir\Assets\Loaders\Resolvers\AbsoluteFileHandleResolver.cpp.obj CMakeFiles\LughCPP.dir\Graphics\G2D\Gdx2DPixmap.cpp.obj CMakeFiles\LughCPP.dir\Graphics\Color.cpp.obj CMakeFiles\LughCPP.dir\Files\Buffers\ByteBuffer.cpp.obj CMakeFiles\LughCPP.dir\Graphics\PixmapFormat.cpp.obj
+build LughCPP.lib: CXX_STATIC_LIBRARY_LINKER__LughCPP_Debug CMakeFiles\LughCPP.dir\library.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetDescriptor.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetLoadingTask.cpp.obj CMakeFiles\LughCPP.dir\Assets\AssetManager.cpp.obj CMakeFiles\LughCPP.dir\Assets\RefCountedContainer.cpp.obj CMakeFiles\LughCPP.dir\Assets\Loaders\AssetLoader.cpp.obj CMakeFiles\LughCPP.dir\Maths\Affine2.cpp.obj CMakeFiles\LughCPP.dir\Maths\Matrix3.cpp.obj CMakeFiles\LughCPP.dir\Maths\Matrix4.cpp.obj CMakeFiles\LughCPP.dir\Maths\Vector2.cpp.obj CMakeFiles\LughCPP.dir\Maths\Vector3.cpp.obj CMakeFiles\LughCPP.dir\Utils\Async\AsyncExecutor.cpp.obj CMakeFiles\LughCPP.dir\Utils\Collections\Array.cpp.obj CMakeFiles\LughCPP.dir\Utils\Collections\ObjectMap.cpp.obj CMakeFiles\LughCPP.dir\Utils\Exceptions\GdxRuntimeException.cpp.obj CMakeFiles\LughCPP.dir\Utils\Exceptions\IllegalStateException.cpp.obj CMakeFiles\LughCPP.dir\Utils\Align.cpp.obj CMakeFiles\LughCPP.dir\Utils\Trace.cpp.obj CMakeFiles\LughCPP.dir\Core\Gdx.cpp.obj CMakeFiles\LughCPP.dir\Graphics\GLUtils\GlVersion.cpp.obj CMakeFiles\LughCPP.dir\Core\GdxVersion.cpp.obj CMakeFiles\LughCPP.dir\Utils\StringUtils.cpp.obj CMakeFiles\LughCPP.dir\Core\BaseGraphics.cpp.obj CMakeFiles\LughCPP.dir\Core\Game.cpp.obj CMakeFiles\LughCPP.dir\Graphics\Pixmap.cpp.obj CMakeFiles\LughCPP.dir\Utils\Async\AsyncResult.cpp.obj CMakeFiles\LughCPP.dir\Assets\Loaders\Resolvers\AbsoluteFileHandleResolver.cpp.obj CMakeFiles\LughCPP.dir\Graphics\G2D\Gdx2DPixmap.cpp.obj CMakeFiles\LughCPP.dir\Graphics\Color.cpp.obj CMakeFiles\LughCPP.dir\Files\Buffers\ByteBuffer.cpp.obj CMakeFiles\LughCPP.dir\Graphics\PixmapFormat.cpp.obj CMakeFiles\LughCPP.dir\Files\Buffers\Buffer.cpp.obj CMakeFiles\LughCPP.dir\Files\Buffers\IntBuffer.cpp.obj CMakeFiles\LughCPP.dir\Files\Buffers\FloatBuffer.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64
   OBJECT_DIR = CMakeFiles\LughCPP.dir

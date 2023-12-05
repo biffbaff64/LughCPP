@@ -176,11 +176,11 @@ public:
     virtual int GetWidth() const;
     virtual int GetHeight() const;
 
-    BlendTypes GetBlending();
-    Filter GetFilter();
+    virtual BlendTypes GetBlending();
+    virtual Filter GetFilter();
 
-    void SetBlending( BlendTypes blend );
-    void SetFilter( Filter filter );
+    virtual void SetBlending( BlendTypes blend );
+    virtual void SetFilter( Filter filter );
 
     /**
      * \brief Returns the OpenGL ES internal format of this Pixmap.
@@ -224,23 +224,23 @@ public:
      * \param height Framebuffer region height
      * \return The new Pixmap.
      */
-    Pixmap CreateFromFrameBuffer( int x, int y, int width, int height );
+    virtual Pixmap CreateFromFrameBuffer( int x, int y, int width, int height );
 
-    Format FormatFromString( const char* str );
+    virtual Format FormatFromString( const char* str );
 
-    bool IsDisposed() const;
-
-    /**
-     * \brief Performs application-defined tasks associated with freeing,
-     * releasing, or resetting unmanaged resources.
-     */
-    void Dispose( bool disposing );
+    virtual bool IsDisposed() const;
 
     /**
      * \brief Performs application-defined tasks associated with freeing,
      * releasing, or resetting unmanaged resources.
      */
-    void Dispose();
+    virtual void Dispose( bool disposing );
+
+    /**
+     * \brief Performs application-defined tasks associated with freeing,
+     * releasing, or resetting unmanaged resources.
+     */
+    virtual void Dispose();
 
 private:
     int width  = 0;

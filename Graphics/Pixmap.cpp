@@ -1,6 +1,10 @@
 #include "Pixmap.h"
 
+#include <locale>
+
 #include "PixmapFormat.h"
+#include "../Core/Gdx.h"
+#include "../Graphics/Igl20.h"
 
 Pixmap::Pixmap( const int width, const int height, const Format format )
 {
@@ -25,7 +29,7 @@ Pixmap::Pixmap( Gdx2DPixmap &pixmap )
 {
 }
 
-void Pixmap::DownloadFromUrl( char* url, IDownloadPixmapResponseListener& responseListener )
+void Pixmap::DownloadFromUrl( char* url, IDownloadPixmapResponseListener &responseListener )
 {
 }
 
@@ -61,8 +65,8 @@ void Pixmap::DrawPixmap( Pixmap* pixmap, int x, int y, int srcx, int srcy, int s
 {
 }
 
-void Pixmap::DrawPixmap( Pixmap* pixmap, int srcx, int srcy, int srcWidth, int srcHeight, int dstx, int dsty,
-    int dstWidth, int dstHeight )
+void Pixmap::DrawPixmap( Pixmap* pixmap, int   srcx, int srcy, int srcWidth, int srcHeight, int dstx, int dsty,
+                         int     dstWidth, int dstHeight )
 {
 }
 
@@ -136,6 +140,7 @@ ByteBuffer Pixmap::GetPixels()
 
 Pixmap::Format Pixmap::GetFormat()
 {
+    return PixmapFormat::FromGdx2DPixmapFormat( gdx_2d_pixmap->GetFormat() );
 }
 
 Gdx2DPixmap* Pixmap::GetGdx2DPixmap() const
@@ -145,10 +150,43 @@ Gdx2DPixmap* Pixmap::GetGdx2DPixmap() const
 
 Pixmap Pixmap::CreateFromFrameBuffer( int x, int y, int width, int height )
 {
+    Gdx::pGL->GLPixelStorei( IGL20::GL_PACK_ALIGNMENT, 1 );
+
+    auto pixmap = Pixmap( width, height, Format::RGBA8888 );
+    const auto pixels = pixmap.GetPixels();
+
+    Gdx::pGL->GLReadPixels( x, y, width, height, IGL20::GL_RGBA, IGL20::GL_UNSIGNED_BYTE, pixels );
+
+    return pixmap;
 }
 
 Pixmap::Format Pixmap::FormatFromString( const char* str )
 {
+    int   i = 0;
+    char lower[ sizeof( str ) / sizeof( char ) ];
+
+    while (str[ i ])
+    {
+        lower[ i ] = std::tolower(str[ i ]);
+        i++;
+    }
+
+    if (strcmp(lower, "alpha"))
+        return Format::Alpha;
+    if (strcmp(lower, "intensity"))
+        return Format::Intensity;
+    if (strcmp(lower, "luminancealpha"))
+        return Format::LuminanceAlpha;
+    if (strcmp(lower, "rgb565"))
+        return Format::RGB565;
+    if (strcmp(lower, "rgba4444"))
+        return Format::RGBA4444;
+    if (strcmp(lower, "rgb888"))
+        return Format::RGB888;
+    if (strcmp(lower, "rgb8888"))
+        return Format::RGBA8888;
+
+    throw std::exception( "Unknown Format! " );
 }
 
 bool Pixmap::IsDisposed() const
@@ -158,7 +196,7 @@ bool Pixmap::IsDisposed() const
 
 void Pixmap::Dispose( const bool disposing )
 {
-    if ( disposing )
+    if (disposing)
     {
         this->gdx_2d_pixmap->Dispose();
         this->is_disposed = true;
@@ -167,5 +205,5 @@ void Pixmap::Dispose( const bool disposing )
 
 void Pixmap::Dispose()
 {
-    Dispose( !is_disposed );
+    Dispose(!is_disposed);
 }

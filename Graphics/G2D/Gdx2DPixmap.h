@@ -1,6 +1,8 @@
 #ifndef GDX2DPIXMAP_H
 #define GDX2DPIXMAP_H
 
+#include <istream>
+
 #include "../../Files/Buffers/ByteBuffer.h"
 
 class Gdx2DPixmap
@@ -28,10 +30,10 @@ public:
 
     /**
      * \brief 
-     * \param inStream 
+     * \param file
      * \param requestedFormat
      */
-    Gdx2DPixmap( StreamReader inStream, int requestedFormat );
+    Gdx2DPixmap( FILE* file, int requestedFormat );
 
     /**
      * \brief
@@ -55,12 +57,15 @@ public:
     int  GetPixel( int x, int y );
     void SetPixel( int x, int y, int color );
 
+    int GetFormat() const;
+
     void DrawLine( int x, int y, int x2, int y2, int color );
     void DrawRect( int x, int y, int width, int height, int color );
     void DrawCircle( int x, int y, int radius, int color );
     void FillRect( int x, int y, int width, int height, int color );
     void FillCircle( int x, int y, int radius, int color );
     void FillTriangle( int x1, int y1, int x2, int y2, int x3, int y3, int color );
+
     void DrawPixmap( Gdx2DPixmap src, int srcX, int srcY, int dstX, int dstY, int width, int height );
     void DrawPixmap( Gdx2DPixmap src,
                      int         srcX,
@@ -75,7 +80,7 @@ public:
     void SetBlend( long src, int scale );
     void SetScale( long src, int scale );
 
-    static Gdx2DPixmap NewPixmap( StreamReader inStream, int requestedFormat );
+    static Gdx2DPixmap NewPixmap( FILE* file, int requestedFormat );
     static Gdx2DPixmap NewPixmap( int width, int height, int format );
 
     static char* GetFormatString( int format );

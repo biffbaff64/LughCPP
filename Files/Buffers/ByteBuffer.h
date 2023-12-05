@@ -1,7 +1,8 @@
 #ifndef BYTEBUFFER_H
 #define BYTEBUFFER_H
+#include "Buffer.h"
 
-class ByteBuffer
+class ByteBuffer : public Buffer
 {
 };
 
